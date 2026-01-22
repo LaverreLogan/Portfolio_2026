@@ -1,16 +1,19 @@
 <template>
-    <div id="app">
-        <Home />
-    </div>
+    <NavBar />
+    <Home />
+    <About />
 </template>
 
 <script>
 import Home from './components/sections/Home.vue'
-
+import NavBar from './components/sections/NavBar.vue'
+import About from './components/sections/About.vue'
 export default {
     name: "App",
     components: {
-        Home
+        Home,
+        NavBar,
+        About
     }
 }
 </script>
@@ -25,6 +28,7 @@ export default {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    background:  #042326;
     color: #333;
 }
 

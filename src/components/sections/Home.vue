@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <p class="home-text">{{ displayText }}<span class="cursor">|</span></p>
-        <img src="/src/assets/images/Illu_1 1.png" alt="Logan" class="logan-image">
+        <img src="/src/assets/images/Illu_2.png" alt="Logan" class="logan-image">
     </div>
 </template>
 
@@ -33,12 +33,20 @@ onMounted(() => {
 
 <style scoped>
 .home {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     height: 100vh;
-    width: 100vw;
-    background: linear-gradient(to right, #042326, #256C74);
+    width: 90%;
+    
+    justify-items: center;
+    img {
+        width: 100%;
+        max-width: 700px;
+    }
 }
 
 .home-text {
