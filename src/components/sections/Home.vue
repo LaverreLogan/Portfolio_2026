@@ -40,7 +40,6 @@ onMounted(() => {
     justify-content: center;
     margin: 0 auto;
     height: 100vh;
-    width: 90%;
     
     justify-items: center;
     img {

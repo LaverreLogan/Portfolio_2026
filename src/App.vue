@@ -28,12 +28,16 @@ export default {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background:  #042326;
+    background: #042326;
     color: #333;
 }
 
 #app {
     overflow-x: hidden;
+
+    >div {
+        width: 90%;
+    }
 }
 
 html {
@@ -42,6 +46,11 @@ html {
 
 button {
     font-family: inherit;
+}
+
+h1,
+h2 {
+    color: #5eead5;
 }
 
 :root {
