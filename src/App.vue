@@ -2,18 +2,21 @@
     <NavBar />
     <Home />
     <About />
+    <Portfolio />
 </template>
 
 <script>
 import Home from './components/sections/Home.vue'
 import NavBar from './components/sections/NavBar.vue'
 import About from './components/sections/About.vue'
+import Portfolio from './components/sections/Portfolio.vue';
 export default {
     name: "App",
     components: {
         Home,
         NavBar,
-        About
+        About,
+        Portfolio
     }
 }
 </script>
@@ -37,6 +40,7 @@ body {
 
     >div {
         width: 90%;
+        margin-bottom: 20px;
     }
 }
 
