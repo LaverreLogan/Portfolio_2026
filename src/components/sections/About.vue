@@ -7,14 +7,10 @@
                     <span class="date">2023 - Aujourd'hui</span>
                 </div>
                 <div class="content">
-                    <ul>
-                        <li>Développement de fonctionnalités back-end: conception de modèles, services et logique métier
-                        </li>
-                        <li>Interaction avec la base de données et structuration des données applicatives</li>
-                        <li>Développement front-end et intégration avec les API back-end</li>
-                        <li>Support applicatif et amélioration continue sur une application métier utilisée en
-                            production (analyse d'incidents, correction de bugs, optimisation des performances)</li>
-                    </ul>
+                    <p>Développement et maintenance d’un SaaS de gestion de projet en production, du back-end au
+                        front-end.
+                        Conception de la logique métier, gestion des données, intégration d’API et amélioration continue
+                        des performances, avec support client et gestion de tickets via Jira.</p>
                 </div>
                 <div class="bullets-container">
                     <div class="bullet">C#</div>
@@ -30,12 +26,10 @@
                     <span class="date">2022 - 2023</span>
                 </div>
                 <div class="content">
-                    <ul>
-                        <li>Développement d'interfaces font-end en Vue.js à partir de maquettes</li>
-                        <li>Intégration d'API tierces (Stripe, etc.) et connexion avec le back-end</li>
-                        <li>Mise en place de fonctionnalités orientées UX et fiabilité des échanges front / back</li>
-                        <li>Veille technologique et échanges techniques au sein de l'équipe</li>
-                    </ul>
+                    <p>Réalisation d’interfaces web en Vue.js à partir de maquettes, avec intégration d’API tierces
+                        (Stripe…).
+                        Attention particulière portée à l’expérience utilisateur, à la fiabilité des échanges front/back
+                        et aux bonnes pratiques.</p>
                 </div>
                 <div class="bullets-container">
                     <div class="bullet">Vue.js</div>
@@ -48,10 +42,15 @@
         <div class="about-me">
             <h1>About me</h1>
             <p>Développeur full stack avec 3 ans d’expérience, je contribue au développement d’une solution SaaS de
-                gestion de projets. J’interviens principalement en C#, CSHTML, JavaScript (jQuery) et SQL, sur
+                gestion de projets.
+            </p>
+            <p>J’interviens principalement en C#, CSHTML, JavaScript (jQuery) et SQL, sur
                 l’implémentation de nouvelles fonctionnalités, la résolution de bugs et le suivi des tickets clients via
-                JIRA. Je participe également à la refonte de rapports HTML, en modernisant le front-end et en faisant
-                évoluer le back-end, avec un focus sur la performance et la maintenabilité du code.</p>
+                JIRA.
+            </p>
+            <p>Je participe également à la refonte de rapports HTML, en modernisant le front-end et en faisant
+                évoluer le back-end, avec un focus sur la performance et la maintenabilité du code.
+            </p>
         </div>
 
     </div>
@@ -65,6 +64,7 @@
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     margin: 0 auto;
     gap: 20px;
 
@@ -75,27 +75,44 @@
         color: #eee;
     }
 
+    .about-me {
+        align-self: center;
+
+        p:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .skill {
+            .content {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
     .date {
         font-style: italic;
         font-weight: bold;
+        opacity: 0.9;
     }
 
     .bullets-container {
         display: flex;
         gap: 5px;
+
         .bullet {
             display: flex;
             justify-content: center;
             align-items: center;
-            background:#083733;
+            background: #083733;
             color: #5eead5;
             padding: 5px 15px;
             border-radius: 25px;
         }
-    }
-
-    ul li::marker {
-        color: #5eead5;
     }
 }
 </style>

@@ -37,6 +37,7 @@
         height: 60px;
         background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(2px);
+        width: 100% !important;
         .navbar-logo {
             img {
                 width: 40px;
