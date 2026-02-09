@@ -1,13 +1,15 @@
 <template>
     <NavBar />
     <Home />
+    <Experiences />
     <About />
     <Portfolio />
 </template>
 
 <script>
-import Home from './components/sections/Home.vue'
 import NavBar from './components/sections/NavBar.vue'
+import Home from './components/sections/Home.vue'
+import Experiences from './components/sections/Experiences.vue'
 import About from './components/sections/About.vue'
 import Portfolio from './components/sections/Portfolio.vue';
 export default {
@@ -15,6 +17,7 @@ export default {
     components: {
         Home,
         NavBar,
+        Experiences,
         About,
         Portfolio
     }
@@ -40,7 +43,6 @@ body {
 
     >div {
         width: 90%;
-        margin-bottom: 20px;
     }
 }
 
