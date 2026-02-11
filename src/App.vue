@@ -4,6 +4,7 @@
     <Experiences />
     <About />
     <Portfolio />
+    <Footer />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import Home from './components/sections/Home.vue'
 import Experiences from './components/sections/Experiences.vue'
 import About from './components/sections/About.vue'
 import Portfolio from './components/sections/Portfolio.vue';
+import Footer from './components/sections/Footer.vue';
 export default {
     name: "App",
     components: {
@@ -19,7 +21,8 @@ export default {
         NavBar,
         Experiences,
         About,
-        Portfolio
+        Portfolio,
+        Footer
     }
 }
 </script>
