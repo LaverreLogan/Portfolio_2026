@@ -24,10 +24,14 @@
 
 <style lang="less" scoped>
 .about {
-    margin: 50px auto;
-    gap: 20px;
-
+    margin: 20px auto;
     .about-me {
+        max-width: 1400px;
+        gap: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(2px);
+        padding: 20px;
+        border-radius: 10px;
         align-self: center;
 
         p {
@@ -53,6 +57,6 @@
         opacity: 0.9;
     }
 
-    
+
 }
 </style>

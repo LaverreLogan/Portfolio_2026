@@ -44,8 +44,8 @@
 <style lang="less" scoped>
 .skills-container {
     display: flex;
-    justify-content: space-around;
-    margin: 50px auto;
+    justify-content: space-between;
+    margin: 20px auto;
     gap: 30px;
     color: #fff;
 
@@ -54,7 +54,8 @@
         backdrop-filter: blur(2px);
         padding: 20px;
         border-radius: 10px;
-        width: 40%;
+        width: 50%;
+        gap: 20px;
         .content {
             margin-bottom: 10px;
         }
