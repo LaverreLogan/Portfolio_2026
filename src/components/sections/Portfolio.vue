@@ -66,7 +66,7 @@
 import { onBeforeUnmount, onMounted } from 'vue';
 import mockupFoxLab from '../../assets/images/foxlabs.webp';
 import mockupRG from '../../assets/images/roland-garros.webp';
-import mockupVanilleVolute from '../../assets/images/vanille-volute2.webp';
+import mockupVanilleVolute from '../../assets/images/vanille-volute.webp';
 import arrowTopRight from '../../assets/images/up-right-arrow.svg';
 import { useI18n } from 'vue-i18n';
 
