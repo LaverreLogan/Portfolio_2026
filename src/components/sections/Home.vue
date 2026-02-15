@@ -1,5 +1,5 @@
 <template>
-    <div class="home">
+    <div id="home" class="home">
         <p class="home-text">{{ displayText }}<span class="cursor">|</span></p>
         <img src="/src/assets/images/Illu_2.png" alt="Logan" class="logan-image">
     </div>

@@ -2,8 +2,8 @@
     <NavBar />
     <Home />
     <Experiences />
-    <About />
     <Portfolio />
+    <About />
     <Footer />
 </template>
 
@@ -47,6 +47,12 @@ body {
     >div {
         width: 90%;
     }
+}
+
+#home,
+#about,
+#projects {
+    scroll-margin-top: 80px;
 }
 
 html {

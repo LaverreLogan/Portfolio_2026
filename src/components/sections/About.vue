@@ -1,25 +1,17 @@
 <template>
-    <div class="about">
-
+    <div id="about" class="about">
         <div class="about-me">
-            <h1>About me</h1>
-            <p>Développeur full stack avec 3 ans d’expérience, je contribue au développement d’une solution SaaS de
-                gestion de projets.
-            </p>
-            <p>J’interviens principalement en C#, CSHTML, JavaScript (jQuery) et SQL, sur
-                l’implémentation de nouvelles fonctionnalités, la résolution de bugs et le suivi des tickets clients via
-                JIRA.
-            </p>
-            <p>Je participe également à la refonte de rapports HTML, en modernisant le front-end et en faisant
-                évoluer le back-end, avec un focus sur la performance et la maintenabilité du code.
-            </p>
+            <h1>{{ t('about') }}</h1>
+            <p>{{ t('aboutMe') }}</p>
         </div>
-
     </div>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n();
+  
 </script>
 
 <style lang="less" scoped>
@@ -27,7 +19,7 @@
     margin: 20px auto;
     .about-me {
         max-width: 1400px;
-        gap: 20px;
+        margin: 0 auto;
         background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(2px);
         padding: 20px;

@@ -1,15 +1,12 @@
 <template>
-    <div class="skills-container">
+    <div id="experiences" class="skills-container">
         <div class="skill">
             <div class="title-container">
                 <h2 class="title">IQar</h2>
-                <span class="date">2023 - Aujourd'hui</span>
+                <span class="date">{{ t('experience1.duration') }}</span>
             </div>
             <div class="content">
-                <p>Développement et maintenance d’un SaaS de gestion de projet en production, du back-end au
-                    front-end.
-                    Conception de la logique métier, gestion des données, intégration d’API et amélioration continue
-                    des performances, avec support client et gestion de tickets via Jira.</p>
+                <p>{{ t('experience1.description') }}</p>
             </div>
             <div class="bullets-container">
                 <div class="bullet">C#</div>
@@ -22,13 +19,10 @@
         <div class="skill">
             <div class="title-container">
                 <h2 class="title">Freelance</h2>
-                <span class="date">2022 - 2023</span>
+                <span class="date">{{ t('experience2.duration') }}</span>
             </div>
             <div class="content">
-                <p>Réalisation d’interfaces web en Vue.js à partir de maquettes, avec intégration d’API tierces
-                    (Stripe…).
-                    Attention particulière portée à l’expérience utilisateur, à la fiabilité des échanges front/back
-                    et aux bonnes pratiques.</p>
+                <p>{{ t('experience2.description') }}</p>
             </div>
             <div class="bullets-container">
                 <div class="bullet">Vue.js</div>
@@ -40,14 +34,18 @@
     </div>
 </template>
 <script setup>
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 </script>
 <style lang="less" scoped>
 .skills-container {
     display: flex;
     justify-content: space-between;
-    margin: 20px auto;
-    gap: 30px;
+    margin: 50px auto;
+    gap: 50px;
     color: #fff;
+    max-width: 1400px;
 
     .skill {
         background: rgba(255, 255, 255, 0.05);
@@ -74,6 +72,17 @@
         color: #5eead5;
         padding: 5px 15px;
         border-radius: 25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+
+        .skill {
+            width: 100%;
+        }
     }
 }
 </style>
